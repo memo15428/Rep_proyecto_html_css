@@ -4,5 +4,8 @@
     box-sizing: border-box;
 }
 body {
-    background: url();
+    background: url("img/enca_1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100vw 100hw;
 }
