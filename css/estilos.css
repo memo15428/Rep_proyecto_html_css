@@ -147,3 +147,87 @@ header .frase_enca {
 .img_portafolio:hover .hover_galeria_portafolio {
     transform: scale(1);
 }
+
+/*Acerca de*/
+
+.img_acerca_de .img_acerca_de_1 {
+    background: #603813;
+    display: inline-flex;
+    width: 46%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .6);
+    
+}
+.img_acerca_de .img_acerca_de_1 img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    display: block;
+}
+.img_acerca_de .img_acerca_de_1 > .texto_acerca_de {
+    width: 60%;
+    color: #ffffff;
+}
+.img_acerca_de .img_acerca_de_1 >.texto_acerca_de p {
+    font-weight: 300;
+    padding-top: 5px;
+}
+
+/*Muro*/
+.muro {
+    background: #f2f2f2;
+    padding-bottom: 30px;
+}
+.img_muro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.img_muro_1 {
+    width: 28%;
+    text-align: center;
+}
+.img_muro_1 img {
+    width: 90%;
+}
+.img_muro_1 h3 {
+    margin: 10px 0;
+}
+.img_muro_1 p {
+    font-weight: normal;
+    text-align: justify;
+}
+/*Footer*/
+footer {
+    background: #A17F30;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+.contenedor_footer {
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #cccccc;
+}
+.texto_footer {
+    text-align: center;
+}
+.texto_footer h4 {
+    color: #ffffff;
+    border-bottom: 3px solid #603813;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+/*.texto_footer p {
+
+}
+
+.final_footer
