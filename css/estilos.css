@@ -122,7 +122,7 @@ header .frase_enca {
 .img_portafolio {
     width: 24%;
     margin-bottom: 10px;
-    /*height: 180px;*/
+    height: 245px;
     overflow: hidden;
     position: relative;
     cursor: pointer;
@@ -140,7 +140,7 @@ header .frase_enca {
     height: 100%;
     top: 0;
     transform: scale(0);
-    background: hsla(273, 91%, 27%, .7);
+    background: rgba(155, 121, 57, 0.555);
     transition: transform .5s;
     display: flex;
     justify-content: center;
@@ -152,6 +152,9 @@ header .frase_enca {
 }
 .hover_galeria_portafolio p {
     color: #ffffff;
+    font-size: 12px;
+    margin: 20px 20px 0 20px;
+    text-align: center;
 }
 .img_portafolio:hover .hover_galeria_portafolio {
     transform: scale(1);
@@ -245,7 +248,7 @@ footer {
     color: burlywood;
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:800px) {
     header {
         background-position: center;
     }
@@ -258,7 +261,7 @@ footer {
         width: 90%;
     }
     .img_publicaciones {
-        width: 90%;
+        width: 100%;
     }
 
     /*Portafolio*/
