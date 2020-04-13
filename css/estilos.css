@@ -7,7 +7,7 @@ body {
     font-family: 'open sans';
 }
 .contenedor {
-    padding: 40px 0;
+    padding: 35px 0;
     width: 90%;
     max-width: 1000px;
     margin: auto;
@@ -17,7 +17,7 @@ body {
     color: #A17F30;
     font-size: 30px;
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 45px;
 }
 .arriba {
     padding-top: 0;
@@ -176,16 +176,16 @@ header .frase_enca {
 .img_acerca_de .img_acerca_de_1 {
     background: #603813;
     display: inline-flex;
-    width: 46%;
-    height: 200px;
+    width: 100%;
+    height: 300px;
     align-items: center;
     justify-content: space-evenly;
     border-radius: 5px;
     box-shadow: 0 0 6px 0 rgba(0, 0, 0, .6);    
 }
 .img_acerca_de .img_acerca_de_1 img{
-    width: 100px;
-    height: 100px;
+    width: 210px;
+    height: 210px;
     object-fit: cover;
     border: 3px solid #ffffff;
     border-radius: 50%;
@@ -195,9 +195,15 @@ header .frase_enca {
     width: 60%;
     color: #ffffff;
 }
+.img_acerca_de .img_acerca_de_1 > .texto_acerca_de h4 {
+    font-size: 22px;
+    padding: 0 10px 10px 0;
+}
 .img_acerca_de .img_acerca_de_1 >.texto_acerca_de p {
     font-weight: 300;
     padding-top: 5px;
+    line-height: 25px;
+    text-align: justify;
 }
 
 /*Muro*/
@@ -207,7 +213,7 @@ header .frase_enca {
 }
 .img_muro {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 .img_muro_1 {
