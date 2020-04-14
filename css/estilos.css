@@ -259,11 +259,31 @@ footer {
 .texto_footer p {
     color: #cccccc;
 }
+.texto_footer a {
+    color: #cccccc;
+    text-decoration: none;
+}
 .final_footer {
     text-align: center;
     font-size: 24px;
     margin: 20px 0 0 0;
     color: burlywood;
+}
+
+.fa-facebook:hover {
+    color:#3B5998;
+}
+.fa-linkedin:hover{
+    color:#0177B5;
+}
+.fa-whatsapp:hover{
+    color:#0177B5;
+}
+i::before {
+    height: 30px;
+    width: 30px;
+    font-size: 20px;
+    margin: 5px;
 }
 
 @media screen and (max-width:800px) {
