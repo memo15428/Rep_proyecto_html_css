@@ -251,6 +251,9 @@ footer {
 .texto_footer {
     text-align: center;
 }
+.email:hover {
+    color: #603813;
+}
 .texto_footer h4 {
     color: #ffffff;
     border-bottom: 3px solid #603813;
@@ -271,23 +274,24 @@ footer {
     color: burlywood;
 }
 .fa-facebook:hover {
-    color:#3B5998;
+    color:#3b5998;
 }
 .fa-linkedin:hover{
-    color:#0177B5;
+    color:#0e76a8;
 }
 .fa-whatsapp:hover{
-    color:#0177B5;
+    color:#00bb2d;
 }
 .fa-google-plus:hover {
-    color:#0177B5;
+    color:#db4a39;
 }
-i::before {
+.fa::before {
     height: 30px;
     width: 30px;
     font-size: 20px;
     margin: 5px;
 }
+
 
 @media screen and (max-width:800px) {
     header {
