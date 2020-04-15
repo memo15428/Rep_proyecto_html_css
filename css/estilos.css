@@ -9,7 +9,7 @@ body {
 .contenedor {
     padding: 35px 0;
     width: 90%;
-    max-width: 1000px;
+    max-width: 1100px;
     margin: auto;
     overflow: hidden;
 }
@@ -227,6 +227,15 @@ header .frase_enca {
 }
 .img_muro_1 h3 {
     margin: 10px 0;
+    height: 20px;
+}
+.img_muro_1 .link_proyecto {
+    text-decoration: none;
+    color: black;
+}
+.img_muro_1 .link_proyecto:hover{
+    color: brown;
+    font-size: 17px;
 }
 .img_muro_1 p {
     font-weight: normal;
