@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="css/estilos_muro.css">
 </head>
 <body>
-    <form action="">
+    <form action="enviar.php" method="post">
         <h2>Comparte tu experiencia en un proyecto...</h2>
-        <input type="text" name="Nombres" placeholder="Nombre">
-        <input type="text" name="Correos" placeholder="Correo">
-        <textarea name="Mensajes" placeholder="Escribe aquí"></textarea>
-        <input type="button" value="PUBLICAR" id="boton_muro_enviar">
+        <input type="text" name="nombres" placeholder="Nombre" required>
+        <input type="text" name="correos" placeholder="Correo" required>
+        <textarea name="mensajes" placeholder="Escribe aquí" required></textarea>
+        <input type="submit" value="PUBLICAR" id="boton_muro_enviar">
     </form>
 </body>
 </html>

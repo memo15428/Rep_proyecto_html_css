@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    text-decoration: none;
     box-sizing: border-box;
 }
 body {
@@ -35,10 +36,10 @@ header {
     background-attachment: fixed;
     position: relative;
 }
-menu {
+.menu {
     width: 100%;
     height: 50px;
-    box-shadow: 1px 1px 5px #000000;
+    text-decoration: none;
 }
 figure .logo {
     width: 12%;
@@ -46,6 +47,52 @@ figure .logo {
     position: absolute;
     margin: 10px 10px;
 }
+nav {
+    float: right;
+}
+.menu_principal {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;    
+}
+.menu_1 {
+    float: left;
+    width: 110px;
+    line-height: 40px;
+    list-style: none;
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+.menu_1 a {
+    list-style: none;
+    color: seashell;
+    text-align: center;
+}
+.menu_1:hover{
+    background: rgba(178, 141, 71, .28);
+}
+.submenu {
+    position: relative;
+    width: 111px;
+    text-align: center;
+    line-height: 42px;
+    border: 4px;
+    background: rgba(178, 141, 71, .1); 
+}
+.submenu:hover {
+    background: rgba(178, 141, 71, .1);
+    transition: background .5s ease-out;
+}
+#menu_principal ul li ul{
+    display: none;
+}
+#menu_principal ul li:hover ul{
+    display: block;
+    position: absolute;
+}
+/*
 nav {
     text-align: right;
     padding: 30px 50px 0 0;
@@ -59,7 +106,7 @@ nav > a {
 }
 nav > a:hover {
     text-decoration: underline;
-}
+}*/
 .ola_img_enca {
     position: absolute;
     bottom: 0;
@@ -220,6 +267,9 @@ header .frase_enca {
     width: 34%;
     text-align: center;
     margin: 25px;
+}
+.img_muro_1:hover {
+    opacity: .6;
 }
 .img_muro_1 img {
     width: 100%;
