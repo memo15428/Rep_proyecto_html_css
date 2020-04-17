@@ -1,9 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+header {
+    width: 100%;
+    height: 100px;
+    font-family: 'open sans';
+}
+.menu {
+    width: 100%;
+    height: 50px;
+    text-decoration: none;
+}
+figure .logo {
+    width: 12%;
+    height: 80px;
+    position: absolute;
+    margin: 10px 10px;
+}
+nav {
+    float: right;
+}
+.menu_principal {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;    
+}
+.menu_1 {
+    float: left;
+    width: 110px;
+    line-height: 40px;
+    list-style: none;
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+.menu_1 a {
+    list-style: none;
+    color: seashell;
+    text-align: center;
+}
+.menu_1:hover{
+    background: rgba(178, 141, 71, .28);
+}
+.submenu {
+    position: relative;
+    width: 111px;
+    text-align: center;
+    line-height: 42px;
+    border: 4px;
+    background: rgba(178, 141, 71, .1); 
+}
+.submenu:hover {
+    background: rgba(178, 141, 71, .1);
+    transition: background .5s ease-out;
+}
+#menu_principal ul li ul{
+    display: none;
+}
+#menu_principal ul li:hover ul{
+    display: block;
+    position: absolute;
+}
 body {
     background-image: url(../img/muro/img_muro_fondo_1.jpg);
     background-size: 100vw 100vh;
     background-attachment: fixed;
     margin: 0;
-    font-family: monospace;
+    font-family: 'open sans';
+}
+main{
+    margin: auto;
 }
 form {
     width: 500px;
@@ -11,14 +81,14 @@ form {
     background: rgba(0, 0, 0, .4);
     padding: 10px 20px;
     box-sizing: border-box;
-    margin-top: 30px;
     border-radius: 8px;
+    margin-top: 40px;
 }
 h2 {
     color: ivory;
     text-align: center;
     margin: 0;
-    font-size: 24px;
+    font-size: 25px;
     margin-bottom: 20px;
 }
 input, textarea {
@@ -41,6 +111,67 @@ textarea {
 }
 #boton_muro_enviar {
     cursor: pointer;
+}
+/*Footer*/
+footer {
+    background: #A17F30;
+    padding: 60px 0 30px 0;
+    margin-top: 148px;
+    overflow: hidden;
+    bottom: 0;
+    position: relative;
+    width: 100%;
+}
+.contenedor_footer {
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #cccccc;
+}
+.texto_footer {
+    text-align: center;
+}
+.email:hover {
+    color: #603813;
+}
+.texto_footer h4 {
+    color: #ffffff;
+    border-bottom: 3px solid #603813;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+.texto_footer p {
+    color: #cccccc;
+}
+.texto_footer a {
+    color: #cccccc;
+    text-decoration: none;
+}
+.final_footer {
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: burlywood;
+}
+.fa-facebook:hover {
+    color:#3b5998;
+}
+.fa-linkedin:hover{
+    color:#0e76a8;
+}
+.fa-whatsapp:hover{
+    color:#00bb2d;
+}
+.fa-google-plus:hover {
+    color:#db4a39;
+}
+.fa::before {
+    height: 30px;
+    width: 30px;
+    font-size: 20px;
+    margin: 5px;
 }
 
 @media (max-width: 480px) {

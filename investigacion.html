@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GeoFault</title>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos_muro.css">
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -30,8 +29,16 @@
             </nav>
         </section>
     </header>
-    <main>
-        <h1>Gracias</h1>
+    <main>   
+        <section>
+            <form action="enviar_investigacion.php" method="post">
+                <h2>Comparte tu experiencia en un investigación...</h2>
+                <input type="text" name="nombres" placeholder="Nombre" required>
+                <input type="text" name="correos" placeholder="Correo" required>
+                <textarea name="mensajes" placeholder="Escribe aquí" required></textarea>
+                <input type="submit" value="PUBLICAR" id="boton_muro_enviar">
+            </form>
+        </section>
     </main>
     <footer>
         <div class="contenedor_footer">
