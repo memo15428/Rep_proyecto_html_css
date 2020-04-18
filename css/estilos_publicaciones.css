@@ -15,23 +15,24 @@ body {
     overflow: hidden;
 }
 .titulo {
-    color: #A17F30;
-    font-size: 30px;
+    color: #F7B733;
+    font-size: 40px;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+    font-weight: bold;
 }
 .arriba {
     padding-top: 0;
 }
 
 /*Encabezado*/
-
 header {
     width: 100%;
     height: 700px;
-    background: #603813;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #b29f9473, #6038136c), url(../img/enca_1.jpg);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #b29f9473, #6038136c), url(../img/enca_1.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: rgba(74,189,172,0.73);
+    background: linear-gradient(92deg,rgba(74,189,172,0.73) 0%, rgba(74,189,172,0.8) 80%), url(../img/enca_1.jpg);
+    background: -webkit-linear-gradient(92deg,rgba(74,189,172,0.73) 0%, rgba(74,189,172,0.8) 80%), url(../img/enca_1.jpg);
+    background: -moz-linear-gradient(92deg,rgba(74,189,172,0.73) 0%, rgba(74,189,172,0.8) 80%), url(../img/enca_1.jpg);
     background-size: cover;
     background-attachment: fixed;
     position: relative;
@@ -61,7 +62,7 @@ nav {
     width: 110px;
     line-height: 40px;
     list-style: none;
-    margin-top: 20px;
+    margin-top: 30px;
     font-size: 14px;
     text-align: center;
 }
@@ -143,6 +144,8 @@ header .frase_enca {
 .publicaciones_container h1 {
     margin: 0 auto;
     margin-bottom: 30px;
+    color: #F7B733;
+    font-size: 35px;
 }
 
 .publicaciones_container .publicaciones_box {
@@ -206,69 +209,75 @@ header .frase_enca {
     color: black;
 }
 .publicaciones_container .publicaciones_box:nth-child(2) .publicaciones_icon {
-    background-color: #4DB9AA;
+    background-color: rgba(74,189,172,0.73);
 }
 .publicaciones_container .publicaciones_box:nth-child(3) .publicaciones_icon {
-    background-color: #477D44;
+    background-color: rgba(252,74,26,0.73);
 }
 .publicaciones_container .publicaciones_box:nth-child(4) .publicaciones_icon {
-    background-color: #477D44;
+    background-color: rgba(252,74,26,0.73);
 }
 .publicaciones_container .publicaciones_box:nth-child(5) .publicaciones_icon {
-    background-color: #4DB9AA;
+    background-color: rgba(74,189,172,0.73);
 }
 .publicaciones_container .publicaciones_box:nth-child(6) .publicaciones_icon {
-    background-color: #4DB9AA;
+    background-color: rgba(74,189,172,0.73);
 }
 .publicaciones_container .publicaciones_box:nth-child(7) .publicaciones_icon {
-    background-color: #477D44;
+    background-color: rgba(252,74,26,0.73);
 }
 .publicaciones_container .publicaciones_box:nth-child(8) .publicaciones_icon {
-    background-color: #477D44;
+    background-color: rgba(252,74,26,0.73);
 }
 .publicaciones_container .publicaciones_box:nth-child(9) .publicaciones_icon {
-    background-color: #4DB9AA;
+    background-color: rgba(74,189,172,0.73);
 }
 /*Footer*/
 footer {
-    background: #A17F30;
-    padding: 60px 0 30px 0;
-    width: 100%;
+    padding: 70px 0 30px 0;
+    margin: auto;
     overflow: hidden;
-    padding: 40px;
+    background: rgba(247,183,51,0.83);
+    background: linear-gradient(92deg,rgba(247,183,51,0.83) 0%, rgba(247,183,51,0.76) 80%), url(../img/publicaciones/footer_imagen.jpg);
+    background: -webkit-linear-gradient(92deg,rgba(247,183,51,0.83) 0%, rgba(247,183,51,0.76) 80%), url(../img/publicaciones/footer_imagen.jpg);
+    background: -moz-linear-gradient(92deg,rgba(247,183,51,0.83) 0%, rgba(247,183,51,0.76) 80%), url(../img/publicaciones/footer_imagen.jpg);
+    background-size: 100% 300px;
+    height: 300px;
 }
 .contenedor_footer {
     display: flex;
     width: 90%;
     justify-content: space-evenly;
     margin: auto;
-    padding-bottom: 50px;
+    padding-bottom: 80px;
     border-bottom: 1px solid #cccccc;
 }
 .texto_footer {
     text-align: center;
+    font-weight: bold;
 }
 .email:hover {
-    color: #603813;
+    color: rgba(74,189,172,0.73);
+    font-weight: bold;
 }
 .texto_footer h4 {
-    color: #ffffff;
-    border-bottom: 3px solid #603813;
+    color: white;
+    border-bottom: 3px solid white;
     padding-bottom: 5px;
     margin-bottom: 10px;
 }
 .texto_footer p {
-    color: #cccccc;
+    color: white;
 }
 .texto_footer a {
-    color: #cccccc;
+    color: white;
     text-decoration: none;
 }
 .final_footer {
     text-align: center;
     font-size: 24px;
-    margin: 20px 0 0 0;
-    color: burlywood;
+    margin: 30px 0 0 0;
+    color: white;
 }
 .fa-facebook:hover {
     color:#3b5998;

@@ -15,10 +15,11 @@ body {
     overflow: hidden;
 }
 .titulo {
-    color: #A17F30;
-    font-size: 30px;
+    color: #F7B733;
+    font-size: 40px;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+    font-weight: bold;
 }
 .arriba {
     padding-top: 0;
@@ -28,9 +29,10 @@ body {
 header {
     width: 100%;
     height: 700px;
-    background: #603813;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #b29f9473, #6038136c), url(../img/enca_1.jpg);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #b29f9473, #6038136c), url(../img/enca_1.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: rgba(74,189,172,0.73);
+    background: linear-gradient(92deg,rgba(74,189,172,0.73) 0%, rgba(74,189,172,0.8) 80%), url(../img/enca_1.jpg);
+    background: -webkit-linear-gradient(92deg,rgba(74,189,172,0.73) 0%, rgba(74,189,172,0.8) 80%), url(../img/enca_1.jpg);
+    background: -moz-linear-gradient(92deg,rgba(74,189,172,0.73) 0%, rgba(74,189,172,0.8) 80%), url(../img/enca_1.jpg);
     background-size: cover;
     background-attachment: fixed;
     position: relative;
@@ -60,7 +62,7 @@ nav {
     width: 110px;
     line-height: 40px;
     list-style: none;
-    margin-top: 20px;
+    margin-top: 30px;
     font-size: 14px;
     text-align: center;
 }
@@ -151,8 +153,8 @@ header .frase_enca {
     margin-bottom: 15px;
 }
 .texto_contenedor h3 span {
-    background: #603813;
-    color: white;
+    background: #FC4A1A;
+    color: rgba(15,18,18,0.73);
     border-radius: 50%;
     display: inline-block;
     text-align: center;
@@ -170,7 +172,7 @@ header .frase_enca {
 /*Portafolio*/
 
 .porfafolio_publicaciones {
-    background: #f2f2f2;
+    background: #DFDCE3;
 }
 .galeria_portafolio {
     display: flex;
@@ -191,6 +193,7 @@ header .frase_enca {
     height: 100%;
     object-fit: cover;
     display: block;
+    filter: grayscale(1);
 }
 .hover_galeria_portafolio {
     position: absolute;
@@ -198,7 +201,7 @@ header .frase_enca {
     height: 100%;
     top: 0;
     transform: scale(0);
-    background: rgba(155, 121, 57, 0.555);
+    background: rgba(74,189,172,0.73);
     transition: transform .5s;
     display: flex;
     justify-content: center;
@@ -209,10 +212,11 @@ header .frase_enca {
     width: 100px;
 }
 .hover_galeria_portafolio p {
-    color: #ffffff;
+    color: white;
     font-size: 12px;
     margin: 20px 20px 0 20px;
     text-align: center;
+    font-weight: bold;
 }
 .img_portafolio:hover .hover_galeria_portafolio {
     transform: scale(1);
@@ -221,7 +225,7 @@ header .frase_enca {
 /*Acerca de*/
 
 .img_acerca_de .img_acerca_de_1 {
-    background: #603813;
+    background: rgba(74,189,172,0.73);
     display: inline-flex;
     width: 100%;
     height: 300px;
@@ -240,7 +244,7 @@ header .frase_enca {
 }
 .img_acerca_de .img_acerca_de_1 > .texto_acerca_de {
     width: 60%;
-    color: #ffffff;
+    color: #606364;
 }
 .img_acerca_de .img_acerca_de_1 > .texto_acerca_de h4 {
     font-size: 22px;
@@ -255,7 +259,7 @@ header .frase_enca {
 
 /*Muro*/
 .muro {
-    background: #f2f2f2;
+    background: #DFDCE3;
 }
 .img_muro {
     display: flex;
@@ -276,14 +280,16 @@ header .frase_enca {
 }
 .img_muro_1 h3 {
     margin: 10px 0;
-    height: 20px;
+    height: 25px;
+    color: #606364;
 }
 .img_muro_1 .link_proyecto {
     text-decoration: none;
-    color: black;
+    color: #606364;
+    font-size: 18px;
 }
 .img_muro_1 .link_proyecto:hover{
-    color: brown;
+    color: rgb(230, 10, 10);
     font-size: 17px;
 }
 .img_muro_1 p {
@@ -293,43 +299,50 @@ header .frase_enca {
 }
 /*Footer*/
 footer {
-    background: #A17F30;
-    padding: 60px 0 30px 0;
+    padding: 70px 0 30px 0;
     margin: auto;
     overflow: hidden;
+    background: rgba(247,183,51,0.83);
+    background: linear-gradient(92deg,rgba(247,183,51,0.83) 0%, rgba(247,183,51,0.76) 80%), url(../img/publicaciones/footer_imagen.jpg);
+    background: -webkit-linear-gradient(92deg,rgba(247,183,51,0.83) 0%, rgba(247,183,51,0.76) 80%), url(../img/publicaciones/footer_imagen.jpg);
+    background: -moz-linear-gradient(92deg,rgba(247,183,51,0.83) 0%, rgba(247,183,51,0.76) 80%), url(../img/publicaciones/footer_imagen.jpg);
+    background-size: 100% 300px;
+    height: 300px;
 }
 .contenedor_footer {
     display: flex;
     width: 90%;
     justify-content: space-evenly;
     margin: auto;
-    padding-bottom: 50px;
+    padding-bottom: 80px;
     border-bottom: 1px solid #cccccc;
 }
 .texto_footer {
     text-align: center;
+    font-weight: bold;
 }
 .email:hover {
-    color: #603813;
+    color: rgba(74,189,172,0.73);
+    font-weight: bold;
 }
 .texto_footer h4 {
-    color: #ffffff;
-    border-bottom: 3px solid #603813;
+    color: white;
+    border-bottom: 3px solid white;
     padding-bottom: 5px;
     margin-bottom: 10px;
 }
 .texto_footer p {
-    color: #cccccc;
+    color: white;
 }
 .texto_footer a {
-    color: #cccccc;
+    color: white;
     text-decoration: none;
 }
 .final_footer {
     text-align: center;
     font-size: 24px;
-    margin: 20px 0 0 0;
-    color: burlywood;
+    margin: 30px 0 0 0;
+    color: white;
 }
 .fa-facebook:hover {
     color:#3b5998;
