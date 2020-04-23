@@ -132,182 +132,106 @@ header .frase_enca {
     color: #ffffff;
     margin-top: 20px;
 }
-/*Todos Publicaciones*/
-/*Estilos Base*/
-.contenedor-img {
-    padding: 30px 0;
-    width: 90%;
-    max-width: 1100px;
-    margin: auto;
-    overflow: hidden;
+/*Todo Publicaciones*/
+.cuadro-imagen {
     display: grid;
-    grid-template-columns: 33% 33% 33%;
-    column-gap: 10px;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 100px;
+    grid-template-columns: 32% 32% 32%;
+    column-gap: 20px;
 }
-.tesis_box {
-    width: 100%;
-    height: 250px;
-    float: left;
-    overflow: hidden;
-    position: relative;
-    text-align: center;
-    cursor: default;
-    background: #fff;
-
-}
-.tesis_box .mascara,.tesis_box .contenido {
-    width: 100%;
-    height: 250px;
-    position: absolute;
-    overflow: hidden;
-    top: 0;
-    left: 0
-}
-.tesis_box img {
-    display: block;
-    position: relative;
-}
-.tesis_box h2 {
-    text-transform: uppercase;
-    color: #fff;
-    text-align: center;
-    position: relative;
-    font-size: 15px;
-    padding: 10px;
-    background:RGBA(96,99,100,0.73);
-    margin: 20px 0 0 0
-}
-.tesis_box p {
-    font-size: 15px;
-    position: relative;
-    color: #fff;
-    padding: 10px 20px 10px;
-    text-align: center;
-}
-.tesis_box a.link_popup {
-    display: inline-block;
-    text-decoration: none;
-    padding: 7px 14px;
-    background: RGBA(96,99,100,0.73);
-    color: #fff;
-    text-transform: uppercase;
-    box-shadow: 0 0 1px #000
-}
-.tesis_box a.link_popup:hover {
-    box-shadow: 0 0 5px #000
-}
-
-/*Ejemplo 1*/
-.tesis img {
-    transition: all 0.2s linear;
-}
-.tesis .mascara {
-    opacity: 0;
-    background-color: rgba(74,189,172,0.73);
-    transition: all 0.3s ease-in-out;
-}
-.tesis h2 {
-    transform: translateX(-200px);/*Desplazamos a la izquierda*/
-    opacity: 0;
-    transition: all 0.7s ease-in-out;
-}
-.tesis p {
-    transform: translateX(200px);/*Desplazamos a la derecha*/
-    opacity: 0;
-    transition: all 0.4s linear;
-}
-.tesis a.link_popup{
-    opacity: 0;
-    transition: all 0.4s ease-in-out;
-    transform: translateY(100px)/*Desplazamos para abajo*/
-}
-.tesis:hover img {
-    transform: scale(1.1);/*Damos un ligero zoom a la imagen*/
-}
-.tesis:hover .mascara {
-    opacity: 1;
-}
-.tesis:hover h2,
-.tesis:hover p,
-.tesis:hover a.link_popup {
-    opacity: 1;
-    transform: translateX(0px);/*Regresamos a las posiciones originales*/
-}
-.tesis:hover p {
-    transition-delay: 0.1s;
-}
-.tesis:hover a.link_popup {
-    transition-delay: 0.2s; /*Aplicamos un pequeño retardo para que se muestre al final*/
-    transform: translateY(0px);
-}
-
-/*Modal*/
-
-.contenedor_popup_modal {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    background: rgba(0, 0, 0, .6);
-    visibility: hidden;
-    opacity: 0;
-    transition: all 600ms;
-}
-.contenedor_popup_modal:target {
-    background: rgba(0, 0, 0, .8);
-    visibility: visible;
-    opacity: 1;
-}
-.contenedor_popup_modal:target .ventana_popup_modal {
-    top: 50%;
-    left: 50%;
-    transform: rotate(0deg) translate(50%, 50%);
-    visibility: visible;
-}
-.ventana_popup_modal {
-    width: 100%;
-    max-width: 800px;
-    height: 500px;
-    position: relative;
+.link-modal {
+    min-height: 100%;
+    background: seagreen;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     display: flex;
-    background: wheat;
-    visibility: hidden;
-    top: -80%;
-    left: -80%;
-    transform: rotate(90deg) translate(-150%, 230%);
-    transition: all 600ms;
-}
-.img_modal {
-    width: 40%;
-    background-image: url(../img/publicaciones/tesis/popup/img_public_tesis_popup_1.JPG);
-    background-size: cover;
-    background-position: center;
-}
-.texto_modal {
-    width: 60%;
-    padding: 50px;
-    overflow-y: auto;
-}
-.texto_modal h1 {
-    font-size: 30px;
-}
-.texto_modal p {
-    margin-top: 20px;
-    font-size: 16px;
-}
-.boton_close_popup {
+    flex-direction: column;
     text-decoration: none;
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    right: -20%;
-    top: -20px;
-    padding: 20px;
-    background: black;
-    color: white;
-    border-radius: 50%;
-    line-height: 10px;
+    color: #444444;
+    position: relative;
+    top: 0;
+    transition: all 0.1s ease-in;
+    margin-bottom: 40px;
 }
+.link-modal:hover {
+    top: -2px;
+    box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+}
+.link-modal article {
+    padding: 20px;
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.link-modal .imagen-publicaciones {
+    padding-bottom: 15px;
+    background-size: cover;
+    background-position: center center;
+}
+.link-modal p {
+    flex: 1;
+    line-height: 1.4;
+}
+h1 {
+    font-size: 20px;
+    margin: 0;
+    color: #333333;
+}
+.link-modal span {
+    font-size: 12px;
+    font-weight: bold;
+    color: #999999;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    margin: 2em 0 0 0;
+}
+/*Todo Publicaciones - Modal*/
+.modal-publicaciones {
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    cursor: pointer;
+    position: fixed;
+    top: -100vh;
+    left: 0;
+    z-index: 999999999;
+    background: rgba(0,0,0,0.73);
+    width: 100vw;
+    height: 100vh;
+    transition: opacity 0.35s ease;
 
+}
+.modal-cerrar {
+    color: #aaa;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    padding-top: 3px;
+    background: #fff;
+    font-size: 16px;
+    width: 25px;
+    height: 25px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;      
+}
+.modal-descargar {
+    position: absolute;
+    text-align: center;
+    cursor: pointer;
+    bottom: 20px;
+    right: 30px;
+    background: #446CB3;
+    color: #fff;
+    width: 50px;
+    border-radius: 2px;
+    font-size: 14px;
+    height: 32px;
+    padding-top: 9px;
+    font-weight: normal;
+}
 /*Footer*/
 footer {
     display: grid;

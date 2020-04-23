@@ -93,21 +93,6 @@ nav {
     display: block;
     position: absolute;
 }
-/*
-nav {
-    text-align: right;
-    padding: 30px 50px 0 0;
-    height: 90px;
-}
-nav > a {
-    color: white;
-    font-weight: 300;
-    text-decoration: none;
-    margin-right: 16px;
-}
-nav > a:hover {
-    text-decoration: underline;
-}*/
 .ola_img_enca {
     position: absolute;
     bottom: 0;
