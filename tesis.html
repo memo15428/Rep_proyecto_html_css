@@ -8,57 +8,193 @@
     <link rel="stylesheet" href="css/estilos_todo_public.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <script type="text/javascript" src="/js/script.js"></script>
 </head>
 <body>
-    <header class="encabezado_general">
-        <section class="menu">
-            <figure>
-                <a href="index.html"><img src="img/logo_gf.png" alt="" class="logo"></a>
-            </figure>
-            <nav id="menu_principal">
+    <header class="encabezado">
+        <div class="wrapper">
+            <div class="logo-principal">
+                <h1>GeoFault</h1>
+            </div>
+            <nav>
                 <ul>
                     <li class="menu_1"><a href="index.html">Inicio</a></li>
                     <li class="menu_1"><a href="publicacion.html">Publicaciones</a></li>
                     <li class="menu_1"><a href="#">Descargas</a></li>
-                    <li class="menu_1"><a href="#">Comparte</a>
-                        <ul>
-                            <a href="proyecto.html"><li class="submenu">Proyectos</li></a>
-                            <a href="investigacion.html"><li class="submenu">Investigaciones</li></a>
-                        </ul>
-                    </li>
+                    <li class="menu_1"><a href="#">Comparte</a></li>
                     <li class="menu_1"><a href="#">Acerca de</a></li>
                 </ul>
             </nav>
-        </section>
-        <section class="frase_enca">
-            <h1>Bienvenido a GeoFault</h1>
-            <h2>...Buenas publicaciones</h2>
-        </section>
-        <div class="ola_img_enca" style="height: 90px; overflow: hidden;" ><svg viewBox="0 0 500 150" 
-            preserveAspectRatio="none" style="height: 100%; width: 100%;">
-            <path d="M0.00,49.99 C160.46,143.58 349.21,-49.99 500.00,49.99 L500.00,150.00 L0.00,150.00 Z" 
-            style="stroke: none; fill: rgb(255, 255, 255);"></path></svg></div>
+        </div>
     </header>
-        <div class="cuadro-imagen">
-            <div class="cuadro-publicaciones">
-                <a href="#modal" class="link-modal">
-                    <div class="imagen-publicaciones"><img src="/img/publicaciones/tesis/img_public_tesis_1.jpg" alt=""></div>
-                    <article>
-                        <h1>Lorem ipsum dolor sit amet.</h1>
-                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, sit!</span>
-                    </article>
-                </a>
-            </div>        
+    <main class="encab-public">
+        <div class="encab-img-public">
+            <h1>PUBLICACIONES</h1>
         </div>
-        <div class="modal-publicaciones" id="modal">
-            <label class="modal-cerrar" for="modal-toggle">&#x2715;</label>
-            <h2>Lorem ipsum dolor sit amet.</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa qui nobis quibusdam saepe aut 
-                corporis deleniti quaerat consequuntur recusandae animi delectus voluptates beatae maiores 
-                quisquam, incidunt neque pariatur omnis distinctio non ducimus nostrum tenetur accusamus 
-                architecto facilis. Rerum, nisi asperiores?</p>
-            <a href="#" class="modal-descargar">Descargar</a>
+    </main>
+    <main class="contenido">
+        <div class="img-public">
+            <div class="most-img-public">
+                <img src="/img/publicaciones/tesis/img_public_tesis_1.jpg" alt="">
+            </div>
+            <section id="modal-1" class="todo-modal">
+                <section class="vent-modal">
+                    <div class="img-modal"><img src="/img/publicaciones/tesis/img_public_tesis_1.jpg" alt="" class="img-vent-modal"></div>
+                    <div class="text-modal">
+                        <h2>Mecánica de suelos y diseño geotécnico de cimientaciones para puentes</h2>
+                        <p>Este documento tiene como objetivo general describir las actividades que se 
+                            realizarán dentro del estudio para obtener suficientes criterios geológicos y 
+                            geotécnicos para el diseño de la cimentación de un puente, y su relación con 
+                            las demás actividades del estudio.</p>
+                        <p>Se incluye también una breve descripción de los procesos para perforación, 
+                            ensayos de campo, muestreo, recuperación de testigos y ensayos de laboratorio 
+                            tanto en el puente como en las vías de acceso, los trabajos de gabinete, 
+                            cálculos, evaluaciones, conclusiones y recomendaciones para la cimentación.</p>
+                        <p>El estudio geotécnico para puentes igual que otros estudios, puede dividirse en 
+                            1) investigación preliminar para seleccionar de entre las varias posibilidades el 
+                            o los sitios más adecuados para la implementación de un puente, 2) investigación de 
+                            detalle para definir las características del sitio, 3) análisis y diseño geotécnico 
+                            de la interpretación de la cimentación y 4) obras de protección que podrán adoptarse.</p>
+                    </div>
+                    <div class="boton-modal">
+                        <a href="index.html">Descargar</a>
+                    </div>
+                    <a href="#close" class="close">X</a>
+                </section>
+            </section>
         </div>
+        <div class="text-public-1">
+            <a href="#modal-1" class="link-modal"></a>
+            <div class="most-texto-public">
+                <h3>Mecánica de suelos y diseño geotécnico de cimientaciones para puentes.</h3>
+                <p class="descrip-text-public">Este documento tiene como objetivo general describir 
+                    las actividades que se realizarán dentro del estudio para obtener suficientes criterios
+                     geológicos y geotécnicos...</p>
+                <p class="nom-text-public">César Landázuri Soto</p>
+            </div>
+            </a>
+        </div>
+        <div class="img-public">
+            <div class="most-img-public">
+                <img src="/img/publicaciones/tesis/img_public_tesis_2.JPG" alt="" class="img-public-tesis">
+            </div>
+            <section id="modal-2" class="todo-modal">
+                <section class="vent-modal">
+                    <div class="img-modal"><img src="/img/publicaciones/tesis/popup/img_public_tesis_popup_2.JPG" alt="" class="img-vent-modal"></div>
+                    <div class="text-modal">
+                        <h2>Conceptos generales de la mecánica de suelo</h2>
+                        <p>La mecánica de suelos y la mecánica de rocas son ciencias relativamente jóvenes 
+                            que se originan solo a mediados del siglo veinte. Son esencialmente ciencias 
+                            experimentales, es decir, que se han desarrollado a partir de la observación, 
+                            la medición, la comprensión de los fenómenos, la modelación y la definición de 
+                            acciones cuyos resultados pueden ser observados, medidos y analizados.</p>
+                        <p>Similarmente a lo que ocurre en otras áreas de las ciencias, los mecánicos de suelos o de rocas no tienen acceso a una descripción perfecta de los materiales de los cuales deben ser capaces de predecir su comportamiento. En efecto, el suelo de un determinado lugar no es ni perfectamente homogéneo ni está uniformemente distribuido en capas regulares. Por lo tanto, el ingeniero geotécnico debe ser capaz, en primer lugar, de reconstituir el contexto general del problema al que se ve enfrentado antes si quiera de comenzar a desarrollar una solución.</p>
+                        <p>En consecuencia, el desarrollo de un proyecto de ingeniería geotécnica requiere de diversas competencias (Magnan, 2000a):</p>
+                        <p>Conocimiento del tipo de situaciones que se pueden encontrar en la práctica a fin de identificar y caracterizar el problema a resolver.</p>
+                        <p>Familiarización con los procedimientos y técnicas de construcción, así como sus dominios de aplicación, a fin de guiar el proceso de cálculo/diseño y de comparación de posibles soluciones.</p>
+                        <p>Comprensión de los fenómenos físicos y mecánicos que permitirán predecir el comportamiento del suelo antes y después de la ejecución de la obra.</p>        
+                        <p>Si bien la experiencia es fundamental para la práctica de la ingeniería geotécnica, el aprendizaje adecuado de las nociones fundamentales ligadas tanto a la observación como al cálculo y al diseño facilitan la adquisición de dicha experiencia.</p>
+                    </div>
+                    <div class="boton-modal">
+                        <a href="index.html">Descargar</a>
+                    </div>
+                    <a href="#close" class="close">X</a>
+                </section>
+            </section>
+        </div>
+        <div class="text-public-2">
+            <a href="#modal-2" class="link-modal"></a>
+            <div class="most-texto-public">
+                <h3>Conceptos generales de la mecanica de suelo</h3>
+                <p class="descrip-text-public">La mecánica de suelos y la mecánica de rocas son ciencias 
+                    relativamente jóvenes que se originan solo a mediados del siglo veinte. Son 
+                    esencialmente ciencias experimentales, es decir...</p>
+                <p class="nom-text-public">Juan Pérez Valcarcel</p>
+            </div>
+            </a>
+        </div>
+        <div class="img-public">
+            <div class="most-img-public">
+                <img src="/img/publicaciones/tesis/img_public_tesis_1.jpg" alt="">
+            </div>
+            <section id="modal-3" class="todo-modal">
+                <section class="vent-modal">
+                    <div class="img-modal"><img src="/img/publicaciones/tesis/img_public_tesis_1.jpg" alt="" class="img-vent-modal"></div>
+                    <div class="text-modal">
+                        <h2>Conceptos generales de la mecánica de suelo</h2>
+                        <p>La mecánica de suelos y la mecánica de rocas son ciencias relativamente jóvenes 
+                            que se originan solo a mediados del siglo veinte. Son esencialmente ciencias 
+                            experimentales, es decir, que se han desarrollado a partir de la observación, 
+                            la medición, la comprensión de los fenómenos, la modelación y la definición de 
+                            acciones cuyos resultados pueden ser observados, medidos y analizados.</p>
+                        <p>Similarmente a lo que ocurre en otras áreas de las ciencias, los mecánicos de suelos o de rocas no tienen acceso a una descripción perfecta de los materiales de los cuales deben ser capaces de predecir su comportamiento. En efecto, el suelo de un determinado lugar no es ni perfectamente homogéneo ni está uniformemente distribuido en capas regulares. Por lo tanto, el ingeniero geotécnico debe ser capaz, en primer lugar, de reconstituir el contexto general del problema al que se ve enfrentado antes si quiera de comenzar a desarrollar una solución.</p>
+                        <p>En consecuencia, el desarrollo de un proyecto de ingeniería geotécnica requiere de diversas competencias (Magnan, 2000a):</p>
+                        <p>Conocimiento del tipo de situaciones que se pueden encontrar en la práctica a fin de identificar y caracterizar el problema a resolver.</p>
+                        <p>Familiarización con los procedimientos y técnicas de construcción, así como sus dominios de aplicación, a fin de guiar el proceso de cálculo/diseño y de comparación de posibles soluciones.</p>
+                        <p>Comprensión de los fenómenos físicos y mecánicos que permitirán predecir el comportamiento del suelo antes y después de la ejecución de la obra.</p>        
+                        <p>Si bien la experiencia es fundamental para la práctica de la ingeniería geotécnica, el aprendizaje adecuado de las nociones fundamentales ligadas tanto a la observación como al cálculo y al diseño facilitan la adquisición de dicha experiencia.</p>
+                    </div>
+                    <div class="boton-modal">
+                        <a href="index.html">Descargar</a>
+                    </div>
+                    <a href="#close" class="close">X</a>
+                </section>
+            </section>
+        </div>
+        <div class="text-public-2">
+            <a href="#modal-3" class="link-modal"></a>
+            <div class="most-texto-public">
+                <h3>Mecánica de suelos y diseño geotécnico de cimientaciones para puentes.</h3>
+                <p class="descrip-text-public">Este documento tiene como objetivo general describir 
+                    las actividades que se realizarán dentro del estudio para obtener suficientes criterios
+                     geológicos y geotécnicos...</p>
+                <p class="nom-text-public">César Landázuri Soto</p>
+            </div>
+            </a>
+        </div>
+        <div class="img-public">
+            <div class="most-img-public">
+                <img src="/img/publicaciones/tesis/img_public_tesis_1.jpg" alt="">
+            </div>
+            <section id="modal" class="todo-modal">
+                <section class="vent-modal">
+                    <div class="img-modal"><img src="/img/publicaciones/tesis/img_public_tesis_1.jpg" alt="" class="img-vent-modal"></div>
+                    <div class="text-modal">
+                        <h2>Mecánica de suelos y diseño geotécnico de cimientaciones para puentes</h2>
+                        <p>Este documento tiene como objetivo general describir las actividades que se 
+                            realizarán dentro del estudio para obtener suficientes criterios geológicos y 
+                            geotécnicos para el diseño de la cimentación de un puente, y su relación con 
+                            las demás actividades del estudio.</p>
+                        <p>Se incluye también una breve descripción de los procesos para perforación, 
+                            ensayos de campo, muestreo, recuperación de testigos y ensayos de laboratorio 
+                            tanto en el puente como en las vías de acceso, los trabajos de gabinete, 
+                            cálculos, evaluaciones, conclusiones y recomendaciones para la cimentación.</p>
+                        <p>El estudio geotécnico para puentes igual que otros estudios, puede dividirse en 
+                            1) investigación preliminar para seleccionar de entre las varias posibilidades el 
+                            o los sitios más adecuados para la implementación de un puente, 2) investigación de 
+                            detalle para definir las características del sitio, 3) análisis y diseño geotécnico 
+                            de la interpretación de la cimentación y 4) obras de protección que podrán adoptarse.</p>
+                    </div>
+                    <div class="boton-modal">
+                        <a href="index.html">Descargar</a>
+                    </div>
+                    <a href="#close" class="close">X</a>
+                </section>
+            </section>
+        </div>
+        <div class="text-public-1">
+            <a href="#modal" class="link-modal"></a>
+            <div class="most-texto-public">
+                <h3>Mecánica de suelos y diseño geotécnico de cimientaciones para puentes.</h3>
+                <p class="descrip-text-public">Este documento tiene como objetivo general describir 
+                    las actividades que se realizarán dentro del estudio para obtener suficientes criterios
+                     geológicos y geotécnicos...</p>
+                <p class="nom-text-public">César Landázuri Soto</p>
+            </div>
+            </a>
+        </div>
+    </main>
+    
     <footer>
         <div class="contenedor_footer">
             <div class="texto_footer">
@@ -82,3 +218,10 @@
     
 </body>
 </html>
+<script type="text/javascript">
+$(document).keydown(function(event) { 
+    if (event.keyCode == 27) { 
+        $('#modal').hide();
+    }
+});
+</script>
