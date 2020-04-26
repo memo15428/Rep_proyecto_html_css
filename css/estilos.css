@@ -1,145 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+/*General*/
 * {
+    font-family: 'Quicksand', sans-serif;
     margin: 0;
     padding: 0;
-    text-decoration: none;
     box-sizing: border-box;
 }
 body {
-    font-family: 'open sans';
+    font-family: 'Quicksand', sans-serif;
 }
 .contenedor {
-    padding: 35px 0;
-    width: 90%;
-    max-width: 1100px;
-    margin: auto;
-    overflow: hidden;
+    margin: 20px 57px;
+
 }
-.titulo {
-    color: #F7B733;
-    font-size: 40px;
+.encab-public {
+    display: grid;
+    height: 40px;
+    grid-template-columns: 100%;
+}
+.encab-img-public {
+    width: 100%;
+    position: relative;
+    background: rgba(244, 169, 122,0.74);
+    color: white;
     text-align: center;
-    margin-bottom: 40px;
-    font-weight: bold;
-}
-.arriba {
-    padding-top: 0;
+    padding: 10px;
+    z-index: 0;
+    font-size: 13px;
 }
 
 /*Encabezado*/
-header {
+.encabezado {
     width: 100%;
-    height: 700px;
-    background: rgba(74,189,172,0.73);
-    background: linear-gradient(92deg,rgba(74,189,172,0.73) 0%, rgba(74,189,172,0.8) 80%), url(../img/enca_1.jpg);
-    background: -webkit-linear-gradient(92deg,rgba(74,189,172,0.73) 0%, rgba(74,189,172,0.8) 80%), url(../img/enca_1.jpg);
-    background: -moz-linear-gradient(92deg,rgba(74,189,172,0.73) 0%, rgba(74,189,172,0.8) 80%), url(../img/enca_1.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    position: relative;
+    height: 200px;
+    overflow: hidden;
+    background: url(/img/enca_1.jpg);
+    background-position: center;
+    
 }
-.menu {
+.logo-principal {
     width: 100%;
-    height: 50px;
-    text-decoration: none;
+    height: 200px;
+    margin: 0;
+    background: rgba(237, 238, 243, 0.73);
 }
-figure .logo {
-    width: 12%;
-    height: 80px;
-    position: absolute;
-    margin: 10px 10px;
-}
-nav {
-    float: right;
-}
-.menu_principal {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 50px;    
-}
-.menu_1 {
+.logo-principal h1 {
+    font-size: 70px;
     float: left;
-    width: 110px;
-    line-height: 40px;
-    list-style: none;
-    margin-top: 30px;
-    font-size: 14px;
-    text-align: center;
+    padding: 57px 20px;
+    top: 0;
+    left: 0;
+    color: rgba(57, 62, 65);
+    letter-spacing: 4px;
 }
-.menu_1 a {
-    list-style: none;
-    color: seashell;
-    text-align: center;
-}
-.menu_1:hover{
-    background: rgba(178, 141, 71, .28);
-}
-.submenu {
-    position: relative;
-    width: 111px;
-    text-align: center;
-    line-height: 42px;
-    border: 4px;
-    background: rgba(178, 141, 71, .1); 
-}
-.submenu:hover {
-    background: rgba(178, 141, 71, .1);
-    transition: background .5s ease-out;
-}
-#menu_principal ul li ul{
-    display: none;
-}
-#menu_principal ul li:hover ul{
-    display: block;
-    position: absolute;
-}
-/*
 nav {
-    text-align: right;
-    padding: 30px 50px 0 0;
-    height: 90px;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    position: fixed;
+    padding: 10px;
+    background: rgba(57, 62, 65, .75);
+    text-align: center;  
 }
-nav > a {
-    color: white;
-    font-weight: 300;
+nav ul {
+    list-style: none;    
+}
+nav ul li {
+    display: inline;
+    padding-right: 30px;
+}
+nav ul li a {
     text-decoration: none;
-    margin-right: 16px;
+    color: wheat;
+    font-weight: bold;
 }
-nav > a:hover {
-    text-decoration: underline;
-}*/
-.ola_img_enca {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+nav ul li a:hover {
+    color: white;
 }
-header .frase_enca {
-    display: flex;
-    height: 430px;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-}
-.frase_enca h1 {
-    font-size: 50px;
-    color: #ffffff;
-}
-.frase_enca h2 {
-    font-size: 30px;
-    font-weight: 300;
-    color: #ffffff;
-    margin-top: 20px;
-}
+
 /*Publicaciones*/
 
-.main .contenedor_arriba {
-    padding: 30px 0 60px 0;
-}
 .contenedor_arriba {
     display: flex;
     justify-content: space-evenly;
+    padding: 0;
+}
+h2{
+    font-size: 30px;
+    text-align: center;
+    padding: 30px;
 }
 .img_publicaciones {
     width: 50%;
@@ -201,7 +150,7 @@ header .frase_enca {
     height: 100%;
     top: 0;
     transform: scale(0);
-    background: rgba(74,189,172,0.73);
+    background: rgba(237, 238, 243, 0.73);
     transition: transform .5s;
     display: flex;
     justify-content: center;
@@ -212,7 +161,7 @@ header .frase_enca {
     width: 100px;
 }
 .hover_galeria_portafolio p {
-    color: white;
+    color: #606364;
     font-size: 12px;
     margin: 20px 20px 0 20px;
     text-align: center;
@@ -225,14 +174,12 @@ header .frase_enca {
 /*Acerca de*/
 
 .img_acerca_de .img_acerca_de_1 {
-    background: rgba(74,189,172,0.73);
+    background:white;
     display: inline-flex;
     width: 100%;
     height: 300px;
     align-items: center;
-    justify-content: space-evenly;
-    border-radius: 5px;
-    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .6);    
+    justify-content: space-evenly;    
 }
 .img_acerca_de .img_acerca_de_1 img{
     width: 210px;
@@ -299,13 +246,15 @@ header .frase_enca {
 }
 /*Footer*/
 footer {
+    display: grid;
+    width: 100%;
     padding: 70px 0 30px 0;
     margin: auto;
     overflow: hidden;
-    background: rgba(247,183,51,0.83);
-    background: linear-gradient(92deg,rgba(247,183,51,0.83) 0%, rgba(247,183,51,0.76) 80%), url(../img/publicaciones/footer_imagen.jpg);
-    background: -webkit-linear-gradient(92deg,rgba(247,183,51,0.83) 0%, rgba(247,183,51,0.76) 80%), url(../img/publicaciones/footer_imagen.jpg);
-    background: -moz-linear-gradient(92deg,rgba(247,183,51,0.83) 0%, rgba(247,183,51,0.76) 80%), url(../img/publicaciones/footer_imagen.jpg);
+    background: rgba(234, 228, 216,0.83);
+    background: linear-gradient(92deg,rgba(234, 228, 216,0.83) 0%, rgba(234, 228, 216,0.76) 80%), url(../img/publicaciones/footer_imagen.jpg);
+    background: -webkit-linear-gradient(92deg,rgba(234, 228, 216,0.83) 0%, rgba(234, 228, 216,0.76) 80%), url(../img/publicaciones/footer_imagen.jpg);
+    background: -moz-linear-gradient(92deg,rgba(234, 228, 216,0.83) 0%, rgba(234, 228, 216,0.76) 80%), url(../img/publicaciones/footer_imagen.jpg);
     background-size: 100% 300px;
     height: 300px;
 }
@@ -326,23 +275,23 @@ footer {
     font-weight: bold;
 }
 .texto_footer h4 {
-    color: white;
-    border-bottom: 3px solid white;
+    color: rgba(57, 62, 65, 0.8);
+    border-bottom: 3px solid rgba(57, 62, 65, 0.8);
     padding-bottom: 5px;
     margin-bottom: 10px;
 }
 .texto_footer p {
-    color: white;
+    color: rgba(57, 62, 65, 0.8);
 }
 .texto_footer a {
-    color: white;
+    color: rgba(57, 62, 65, 0.8);
     text-decoration: none;
 }
 .final_footer {
     text-align: center;
     font-size: 24px;
     margin: 30px 0 0 0;
-    color: white;
+    color: rgba(57, 62, 65, 0.8);
 }
 .fa-facebook:hover {
     color:#3b5998;
@@ -362,122 +311,23 @@ footer {
     font-size: 20px;
     margin: 5px;
 }
-
-
-@media screen and (max-width:800px) {
-    header {
-        background-position: center;
-    }
-    .contenedor_arriba {
+@media screen and (max-width: 900px) {
+    .vent-modal {
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        height: 100%;
+        max-height: 800px;
     }
-    .arriba .texto_contenedor {
-        width: 90%;
-    }
-    .img_publicaciones {
+    .img-modal {
         width: 100%;
+        height: 40%;
     }
-
-    /*Portafolio*/
-    .img_portafolio {
-        width: 40%;
-    }
-
-    /*Acerca de*/
-    .img_acerca_de {
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-    }
-    .img_acerca_de_1 {
-        width: 90%;
-    }
-    .img_acerca_de .img_acerca_de_1:first-child {
-        margin-bottom: 30px;
-    }
-
-    /*Muro*/
-    .img_muro {
-        justify-content: center;
-        flex-direction: column;
-    }
-    .img_muro_1 {
+    .text-modal {
         width: 100%;
-        text-align: center;
+        height: 60%;
+        padding: 80px;
     }
-    .img_muro_1:nth-child(1), .img_muro_1:nth-child(2) {
-        margin-bottom: 60px;
-    }
-    .img_muro_1 img {
-        width: 90%;
-    }
+
 }
 
-@media screen and (max-width:500px) {
-    nav {
-        text-align: center;
-        padding: 30px 0 0 0;
-    }
-    nav > a {
-        margin-right: 5px;
-    }
-    .frase_enca h1 {
-        font-size: 35px;
-    }
-    .frase_enca h2 {
-        font-size: 20px;
-    }
 
-    /*Acerca de*/
 
-    .img_publicaciones {
-        margin-bottom: 60px;
-        width: 99%;
-    }
-    .arriba .texto_contenedor {
-        width: 95%;
-    }
-
-    /*Portafolio*/
-    .img_portafolio {
-        width: 95%;
-    }
-
-    /*Acerca de*/
-
-    .img_acerca_de .img_acerca_de_1 {
-        height: 450px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .img_acerca_de .img_acerca_de_1 img {
-        width: 90px;
-        height: 90px;
-    }
-
-    /*footer*/
-
-    .contenedor_footer {
-        flex-direction: column;
-        border: none;
-    }
-
-    .texto_footer {
-        margin-bottom: 20px;
-        text-align: center;
-    }
-    .texto_footer h4 {
-        border: none;
-    }
-    .texto_footer p {
-        color: #cccccc;
-        border-bottom: 1px solid #f2f2f2;
-        padding-bottom: 2opx;
-    }
-    .final_footer {
-        font-size: 20px;
-    }
-}

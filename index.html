@@ -8,40 +8,33 @@
     <link rel="stylesheet" href="css/estilos.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <script type="text/javascript" src="/js/script.js"></script>
 </head>
 <body>
-    <header class="encabezado_general">
-        <section class="menu">
-            <figure>
-                <a href="index.html"><img src="img/logo_gf.png" alt="" class="logo"></a>
-            </figure>
-            <nav id="menu_principal">
+    <header class="encabezado">
+        <div class="wrapper">
+            <div class="logo-principal">
+                <h1>GeoFault</h1>
+            </div>
+            <nav>
                 <ul>
                     <li class="menu_1"><a href="index.html">Inicio</a></li>
                     <li class="menu_1"><a href="publicacion.html">Publicaciones</a></li>
                     <li class="menu_1"><a href="#">Descargas</a></li>
-                    <li class="menu_1"><a href="#">Comparte</a>
-                        <ul>
-                            <a href="proyecto.html"><li class="submenu">Proyectos</li></a>
-                            <a href="investigacion.html"><li class="submenu">Investigaciones</li></a>
-                        </ul>
-                    </li>
+                    <li class="menu_1"><a href="#">Comparte</a></li>
                     <li class="menu_1"><a href="#">Acerca de</a></li>
                 </ul>
             </nav>
-        </section>
-        <section class="frase_enca">
-            <h1>Bienvenido a GeoFault</h1>
-            <h2>...Buenas publicaciones</h2>
-        </section>
-        <div class="ola_img_enca" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" 
-            preserveAspectRatio="none" style="height: 100%; width: 100%;">
-            <path d="M0.00,49.99 C160.46,143.58 349.21,-49.99 500.00,49.99 L500.00,150.00 L0.00,150.00 Z" 
-            style="stroke: none; fill: rgb(255, 255, 255);"></path></svg></div>
+        </div>
     </header>
+    <main class="encab-public">
+        <div class="encab-img-public">
+            <h1>INICIO</h1>
+        </div>
+    </main>
     <main>
         <section class="contenedor arriba">
-            <h2 class="titulo contenedor_arriba">Encuentra...</h2>
+            <h2 class="titulo_h2">Encuentra...</h2>
             <div class="contenedor_arriba">
                 <img src="img/img_contenedor_0.jpg" alt="" class="img_publicaciones">
                 <div class="texto_contenedor">
@@ -58,9 +51,9 @@
                 </div>
             </div>
         </section>
-        <section class="porfafolio_publicaciones">
-            <div class="contenedor portafolio">
-                <h2 class="titulo portafolio">Recomendaciones...</h2>
+        <section class="contenedor porfafolio_publicaciones">
+            <div class="portafolio">
+                <h2 class="titulo_h2">Recomendaciones...</h2>
                 <div class="galeria_portafolio">
                     <div class="img_portafolio">
                         <img src="img/publicaciones/img_caratula_1215-IDAS_1.jpg" alt="">
@@ -123,7 +116,7 @@
             </div>
         </section>
         <section class="contenedor acerca_de">
-            <h2 class="titulo acerca_de">Acerca de...</h2>
+            <h2 class="titulo_h2">Acerca de...</h2>
             <div class="img_acerca_de">
                 <div class="img_acerca_de_1">
                     <img src="img/img_acerca_de_1.jpg" alt="">
@@ -140,9 +133,9 @@
                 </div>
             </div>
         </section>
-        <section class="muro">
-            <div class="contenedor muro">
-                <h2 class="titulo muro">Comparte tu experiencia...</h2>
+        <section class="contenedor muro">
+            <div class="contenedor_muro">
+                <h2 class="titulo_h2">Comparte tu experiencia...</h2>
                 <div class="img_muro">    
                     <div class="img_muro_1">
                         <a href="proyecto.html"><img src="img/muro/img_muro_proyectos_1.jpg" alt=""></a>
@@ -159,26 +152,34 @@
                 </div>
             </div>
         </section>
-        <footer>
-            <div class="contenedor_footer">
-                <div class="texto_footer">
-                    <h4>Telefono</h4>
-                    <p>999033576</p>
-                </div>
-                <div class="texto_footer">
-                    <h4>Email</h4>
-                    <a href="mailto:miguel.mogollon@geofault.com" class="email">Escribenos para mejorar</a>
-                </div>
-                <div class="texto_footer">
-                    <h4>Redes sociales</h4>
-                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://geofault.com" target="_blank" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                    <a href="https://api.whatsapp.com/send?text=https://geofault.com" target="_blank" class="whatsapp"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
-                    <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://geofault.com" target="_blank" class="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                    <a href="https://plus.google.com/share?url=https://geofault.com" target="_blank" class="google-plus"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                </div>
-            </div>
-            <h5 class="final_footer">&copy; GeoFault | Miguel Mogollon</h5>
-        </footer>
     </main>
+    <footer>
+        <div class="contenedor_footer">
+            <div class="texto_footer">
+                <h4>Telefono</h4>
+                <p>999033576</p>
+            </div>
+            <div class="texto_footer">
+                <h4>Email</h4>
+                <a href="mailto:miguel.mogollon@geofault.com" class="email">Escribenos para mejorar</a>
+            </div>
+            <div class="texto_footer">
+                <h4>Redes sociales</h4>
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https://geofault.com" target="_blank" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="https://api.whatsapp.com/send?text=https://geofault.com" target="_blank" class="whatsapp"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://geofault.com" target="_blank" class="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a href="https://plus.google.com/share?url=https://geofault.com" target="_blank" class="google-plus"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <h5 class="final_footer">&copy; GeoFault | Miguel Mogollon</h5>
+    </footer>
+    
 </body>
 </html>
+<script type="text/javascript">
+$(document).keydown(function(event) { 
+    if (event.keyCode == 27) { 
+        $('#modal').hide();
+    }
+});
+</script>
