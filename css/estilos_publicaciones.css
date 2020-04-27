@@ -8,6 +8,10 @@
 }
 body {
     font-family: 'Quicksand', sans-serif;
+    background: url(/img/enca_1.jpg);
+    background-size: 100% 1000px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 /*Encabezado*/
@@ -23,12 +27,12 @@ body {
     width: 100%;
     height: 200px;
     margin: 0;
-    background: rgba(237, 238, 243, 0.73);
+    background: rgba(183, 156, 111, 0.83);
 }
 .logo-principal h1 {
     font-size: 70px;
     float: left;
-    padding: 57px 20px;
+    padding: 57px 57px;
     top: 0;
     left: 0;
     color: rgba(57, 62, 65);
@@ -66,7 +70,7 @@ nav ul li a:hover {
 .encab-img-public {
     width: 100%;
     position: relative;
-    background: rgba(244, 169, 122,0.74);
+    background: rgba(6, 5, 4);
     color: white;
     text-align: center;
     padding: 10px;
@@ -74,49 +78,51 @@ nav ul li a:hover {
     font-size: 13px;
 }
 /*Publicaciones*/
-.publicaciones_container {
-    position: relative;
-    width: 820px;
-    height: 1295px;
-    margin: 10px auto;
-    background: white;
+.arriba {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 300px 300px;
+    margin: 30px 57px;
     text-align: center;
     z-index: 0;
 }
-.publicaciones_container h1 {
+.publicaciones_box {
+    width: 200px;
+    height: 2800px;
+}
+.arriba h1 {
     margin: 0 auto;
     margin-bottom: 30px;
     color: #F7B733;
     font-size: 35px;
 }
-
-.publicaciones_container .publicaciones_box {
+.arriba .publicaciones_box {
     position: relative;
-    width: calc(400px - 20px);
-    height: calc(300px - 30px);
-    background: RGBA(77,185,170,0.29);
+    width: calc(260px);
+    height: calc(280px);
+    background: rgba(183, 156, 111,0.29);
     float: left;
     margin: 15px;
     box-sizing: border-box;
     overflow: hidden;
     border-radius: 10px;
 }
-.publicaciones_container .publicaciones_box .publicaciones_icon {
+.arriba .publicaciones_box .publicaciones_icon {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 1;
+    z-index: 0;
 }
-.publicaciones_container .publicaciones_box .publicaciones_icon:hover {
+.arriba .publicaciones_box .publicaciones_icon:hover {
     top: 20px;
     left: calc(50% - 40px);
     width: 58px;
     height: 40px;
     
 }
-.publicaciones_container .publicaciones_box .publicaciones_icon .img_tesis {
+.arriba .publicaciones_box .publicaciones_icon .img_tesis {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -124,11 +130,11 @@ nav ul li a:hover {
     transition: 0.8s;
     font-size: 100px;
 }
-.publicaciones_container .publicaciones_box:hover .publicaciones_icon .img_tesis {
+.arriba .publicaciones_box:hover .publicaciones_icon .img_tesis {
     height: 80px;
     margin-top: 30px;
 }
-.publicaciones_container .publicaciones_box .img_tesis_titulo {
+.arriba .publicaciones_box .img_tesis_titulo {
     position: absolute;
     height: calc(100% - 10px);
     text-align: center;
@@ -137,42 +143,42 @@ nav ul li a:hover {
     top: 100%;
     transition: 0.8s;
 }
-.publicaciones_container .publicaciones_box:hover .img_tesis_titulo {
+.arriba .publicaciones_box:hover .img_tesis_titulo {
     top: 100px;
 }
-.publicaciones_container .publicaciones_box .img_tesis_titulo h3 {
+.arriba .publicaciones_box .img_tesis_titulo h3 {
     margin: 10px;
     padding: 0;
     color: black;
 }
-.publicaciones_container .publicaciones_box .img_tesis_titulo p {
+.arriba .publicaciones_box .img_tesis_titulo p {
     margin: 0;
     padding: 0;
     color: black;
 }
-.publicaciones_container .publicaciones_box:nth-child(2) .publicaciones_icon {
-    background-color: rgba(74,189,172,0.73);
+.arriba .publicaciones_box:nth-child(1) .publicaciones_icon {
+    background-color: rgba(109, 66, 45,0.8);
 }
-.publicaciones_container .publicaciones_box:nth-child(3) .publicaciones_icon {
-    background-color: rgba(252,74,26,0.73);
+.arriba .publicaciones_box:nth-child(2) .publicaciones_icon {
+    background-color: rgba(255, 255, 255,0.8);
 }
-.publicaciones_container .publicaciones_box:nth-child(4) .publicaciones_icon {
-    background-color: rgba(252,74,26,0.73);
+.arriba .publicaciones_box:nth-child(3) .publicaciones_icon {
+    background-color: rgba(109, 66, 45,0.8);
 }
-.publicaciones_container .publicaciones_box:nth-child(5) .publicaciones_icon {
-    background-color: rgba(74,189,172,0.73);
+.arriba .publicaciones_box:nth-child(4) .publicaciones_icon {
+    background-color: rgba(255, 255, 255,0.8);
 }
-.publicaciones_container .publicaciones_box:nth-child(6) .publicaciones_icon {
-    background-color: rgba(74,189,172,0.73);
+.arriba .publicaciones_box:nth-child(5) .publicaciones_icon {
+    background-color: rgba(255, 255, 255,0.8);
 }
-.publicaciones_container .publicaciones_box:nth-child(7) .publicaciones_icon {
-    background-color: rgba(252,74,26,0.73);
+.arriba .publicaciones_box:nth-child(6) .publicaciones_icon {
+    background-color: rgba(109, 66, 45,0.8);
 }
-.publicaciones_container .publicaciones_box:nth-child(8) .publicaciones_icon {
-    background-color: rgba(252,74,26,0.73);
+.arriba .publicaciones_box:nth-child(7) .publicaciones_icon {
+    background-color: rgba(255, 255, 255,0.8);
 }
-.publicaciones_container .publicaciones_box:nth-child(9) .publicaciones_icon {
-    background-color: rgba(74,189,172,0.73);
+.arriba .publicaciones_box:nth-child(8) .publicaciones_icon {
+    background-color: rgba(109, 66, 45,0.8);
 }
 /*Footer*/
 footer {
@@ -181,10 +187,10 @@ footer {
     padding: 70px 0 30px 0;
     margin: auto;
     overflow: hidden;
-    background: rgba(234, 228, 216,0.83);
-    background: linear-gradient(92deg,rgba(234, 228, 216,0.83) 0%, rgba(234, 228, 216,0.76) 80%), url(../img/publicaciones/footer_imagen.jpg);
-    background: -webkit-linear-gradient(92deg,rgba(234, 228, 216,0.83) 0%, rgba(234, 228, 216,0.76) 80%), url(../img/publicaciones/footer_imagen.jpg);
-    background: -moz-linear-gradient(92deg,rgba(234, 228, 216,0.83) 0%, rgba(234, 228, 216,0.76) 80%), url(../img/publicaciones/footer_imagen.jpg);
+    background: rgba(6, 5, 4,0.83);
+    background: linear-gradient(92deg,rgba(6, 5, 4,0.83) 0%, rgba(6, 5, 46,0.76) 80%), url(../img/publicaciones/footer_imagen.jpg);
+    background: -webkit-linear-gradient(92deg,rgba(6, 5, 4,0.83) 0%, rgba(6, 5, 4,0.76) 80%), url(../img/publicaciones/footer_imagen.jpg);
+    background: -moz-linear-gradient(92deg,rgba(6, 5, 4,0.83) 0%, rgba(6, 5, 46,0.76) 80%), url(../img/publicaciones/footer_imagen.jpg);
     background-size: 100% 300px;
     height: 300px;
 }
@@ -194,7 +200,7 @@ footer {
     justify-content: space-evenly;
     margin: auto;
     padding-bottom: 80px;
-    border-bottom: 1px solid #cccccc;
+    border-bottom: 1px solid white;
 }
 .texto_footer {
     text-align: center;
@@ -205,23 +211,23 @@ footer {
     font-weight: bold;
 }
 .texto_footer h4 {
-    color: rgba(57, 62, 65, 0.8);
-    border-bottom: 3px solid rgba(57, 62, 65, 0.8);
+    color: white;
+    border-bottom: 3px solid white;
     padding-bottom: 5px;
     margin-bottom: 10px;
 }
 .texto_footer p {
-    color: rgba(57, 62, 65, 0.8);
+    color: white;
 }
 .texto_footer a {
-    color: rgba(57, 62, 65, 0.8);
+    color: white;
     text-decoration: none;
 }
 .final_footer {
     text-align: center;
     font-size: 24px;
     margin: 30px 0 0 0;
-    color: rgba(57, 62, 65, 0.8);
+    color: white;
 }
 .fa-facebook:hover {
     color:#3b5998;

@@ -8,6 +8,10 @@
 }
 body {
     font-family: 'Quicksand', sans-serif;
+    background: url(/img/enca_1.jpg);
+    background-size: 100% 1000px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 /*Encabezado*/
@@ -28,7 +32,7 @@ body {
 .logo-principal h1 {
     font-size: 70px;
     float: left;
-    padding: 57px 20px;
+    padding: 57px 57px;
     top: 0;
     left: 0;
     color: rgba(57, 62, 65);
@@ -109,12 +113,12 @@ a.link-modal{
 .text-public-1 {
     height: 260px;
     box-sizing: border-box;
-    background: white;
+    background:rgba(255, 255, 255, 0.73);
     hyphens: auto;
 }
 h3 {
 	color: black;
-	font-size: 19px;
+	font-size: 15px;
     text-align: center;
     padding: 10px;
 }
@@ -130,7 +134,7 @@ p.nom-text-public {
     float: left;
     position: relative;
     bottom: -15px;
-    padding: 10px;
+    padding: 5px 10px;
 }
 .img-public-tesis {
     width: 284px;
@@ -237,10 +241,10 @@ footer {
     padding: 70px 0 30px 0;
     margin: auto;
     overflow: hidden;
-    background: rgba(234, 228, 216,0.83);
-    background: linear-gradient(92deg,rgba(234, 228, 216,0.83) 0%, rgba(234, 228, 216,0.76) 80%), url(../img/publicaciones/footer_imagen.jpg);
-    background: -webkit-linear-gradient(92deg,rgba(234, 228, 216,0.83) 0%, rgba(234, 228, 216,0.76) 80%), url(../img/publicaciones/footer_imagen.jpg);
-    background: -moz-linear-gradient(92deg,rgba(234, 228, 216,0.83) 0%, rgba(234, 228, 216,0.76) 80%), url(../img/publicaciones/footer_imagen.jpg);
+    background: rgba(6, 5, 4,0.83);
+    background: linear-gradient(92deg,rgba(6, 5, 4,0.83) 0%, rgba(6, 5, 46,0.76) 80%), url(../img/publicaciones/footer_imagen.jpg);
+    background: -webkit-linear-gradient(92deg,rgba(6, 5, 4,0.83) 0%, rgba(6, 5, 4,0.76) 80%), url(../img/publicaciones/footer_imagen.jpg);
+    background: -moz-linear-gradient(92deg,rgba(6, 5, 4,0.83) 0%, rgba(6, 5, 46,0.76) 80%), url(../img/publicaciones/footer_imagen.jpg);
     background-size: 100% 300px;
     height: 300px;
 }
@@ -250,7 +254,7 @@ footer {
     justify-content: space-evenly;
     margin: auto;
     padding-bottom: 80px;
-    border-bottom: 1px solid #cccccc;
+    border-bottom: 1px solid white;
 }
 .texto_footer {
     text-align: center;
@@ -261,23 +265,23 @@ footer {
     font-weight: bold;
 }
 .texto_footer h4 {
-    color: rgba(57, 62, 65, 0.8);
-    border-bottom: 3px solid rgba(57, 62, 65, 0.8);
+    color: white;
+    border-bottom: 3px solid white;
     padding-bottom: 5px;
     margin-bottom: 10px;
 }
 .texto_footer p {
-    color: rgba(57, 62, 65, 0.8);
+    color: white;
 }
 .texto_footer a {
-    color: rgba(57, 62, 65, 0.8);
+    color: white;
     text-decoration: none;
 }
 .final_footer {
     text-align: center;
     font-size: 24px;
     margin: 30px 0 0 0;
-    color: rgba(57, 62, 65, 0.8);
+    color: white;
 }
 .fa-facebook:hover {
     color:#3b5998;

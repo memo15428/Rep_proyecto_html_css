@@ -8,6 +8,10 @@
 }
 body {
     font-family: 'Quicksand', sans-serif;
+    background: url(/img/enca_1.jpg);
+    background-size: 100% 1000px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 .contenedor {
     margin: 20px 57px;
@@ -47,7 +51,7 @@ body {
 .logo-principal h1 {
     font-size: 70px;
     float: left;
-    padding: 57px 20px;
+    padding: 57px 57px;
     top: 0;
     left: 0;
     color: rgba(57, 62, 65);
@@ -84,11 +88,13 @@ nav ul li a:hover {
     display: flex;
     justify-content: space-evenly;
     padding: 0;
+    background: rgba(255, 255, 255, 0.60);
 }
 h2{
     font-size: 30px;
     text-align: center;
     padding: 30px;
+    color: rgba(15,18,18,0.73);
 }
 .img_publicaciones {
     width: 50%;
@@ -100,6 +106,7 @@ h2{
 }
 .texto_contenedor h3 {
     margin-bottom: 15px;
+    color: rgba(15,18,18,0.73);
 }
 .texto_contenedor h3 span {
     background: #FC4A1A;
@@ -117,6 +124,7 @@ h2{
     padding: 0 0 30px 30px;
     font-weight: 300;
     text-align: justify;
+    color: rgba(15,18,18,0.73);
 }
 /*Portafolio*/
 
@@ -174,7 +182,7 @@ h2{
 /*Acerca de*/
 
 .img_acerca_de .img_acerca_de_1 {
-    background:white;
+    background:rgba(255, 255, 255, 0.60);
     display: inline-flex;
     width: 100%;
     height: 300px;
@@ -191,7 +199,7 @@ h2{
 }
 .img_acerca_de .img_acerca_de_1 > .texto_acerca_de {
     width: 60%;
-    color: #606364;
+    color: rgba(15,18,18,0.73);
 }
 .img_acerca_de .img_acerca_de_1 > .texto_acerca_de h4 {
     font-size: 22px;
@@ -251,10 +259,10 @@ footer {
     padding: 70px 0 30px 0;
     margin: auto;
     overflow: hidden;
-    background: rgba(234, 228, 216,0.83);
-    background: linear-gradient(92deg,rgba(234, 228, 216,0.83) 0%, rgba(234, 228, 216,0.76) 80%), url(../img/publicaciones/footer_imagen.jpg);
-    background: -webkit-linear-gradient(92deg,rgba(234, 228, 216,0.83) 0%, rgba(234, 228, 216,0.76) 80%), url(../img/publicaciones/footer_imagen.jpg);
-    background: -moz-linear-gradient(92deg,rgba(234, 228, 216,0.83) 0%, rgba(234, 228, 216,0.76) 80%), url(../img/publicaciones/footer_imagen.jpg);
+    background: rgba(6, 5, 4,0.83);
+    background: linear-gradient(92deg,rgba(6, 5, 4,0.83) 0%, rgba(6, 5, 46,0.76) 80%), url(../img/publicaciones/footer_imagen.jpg);
+    background: -webkit-linear-gradient(92deg,rgba(6, 5, 4,0.83) 0%, rgba(6, 5, 4,0.76) 80%), url(../img/publicaciones/footer_imagen.jpg);
+    background: -moz-linear-gradient(92deg,rgba(6, 5, 4,0.83) 0%, rgba(6, 5, 46,0.76) 80%), url(../img/publicaciones/footer_imagen.jpg);
     background-size: 100% 300px;
     height: 300px;
 }
@@ -264,7 +272,7 @@ footer {
     justify-content: space-evenly;
     margin: auto;
     padding-bottom: 80px;
-    border-bottom: 1px solid #cccccc;
+    border-bottom: 1px solid white;
 }
 .texto_footer {
     text-align: center;
@@ -275,23 +283,23 @@ footer {
     font-weight: bold;
 }
 .texto_footer h4 {
-    color: rgba(57, 62, 65, 0.8);
-    border-bottom: 3px solid rgba(57, 62, 65, 0.8);
+    color: white;
+    border-bottom: 3px solid white;
     padding-bottom: 5px;
     margin-bottom: 10px;
 }
 .texto_footer p {
-    color: rgba(57, 62, 65, 0.8);
+    color: white;
 }
 .texto_footer a {
-    color: rgba(57, 62, 65, 0.8);
+    color: white;
     text-decoration: none;
 }
 .final_footer {
     text-align: center;
     font-size: 24px;
     margin: 30px 0 0 0;
-    color: rgba(57, 62, 65, 0.8);
+    color: white;
 }
 .fa-facebook:hover {
     color:#3b5998;

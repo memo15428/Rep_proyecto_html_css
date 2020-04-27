@@ -10,35 +10,27 @@
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 </head>
 <body>
-    <header class="encabezado_general">
-        <section class="menu">
-            <figure>
-                <a href="index.html"><img src="img/logo_gf.png" alt="" class="logo"></a>
-            </figure>
-            <nav id="menu_principal">
+    <header class="encabezado">
+        <div class="wrapper">
+            <div class="logo-principal">
+                <a href="index.html"><h1>GeoFault</h1></a>
+            </div>
+            <nav>
                 <ul>
                     <li class="menu_1"><a href="index.html">Inicio</a></li>
                     <li class="menu_1"><a href="publicacion.html">Publicaciones</a></li>
                     <li class="menu_1"><a href="#">Descargas</a></li>
-                    <li class="menu_1"><a href="#">Comparte</a>
-                        <ul>
-                            <a href="proyecto.html"><li class="submenu">Proyectos</li></a>
-                            <a href="investigacion.html"><li class="submenu">Investigaciones</li></a>
-                        </ul>
-                    </li>
+                    <li class="menu_1"><a href="#">Comparte</a></li>
                     <li class="menu_1"><a href="#">Acerca de</a></li>
                 </ul>
             </nav>
-        </section>
-        <section class="frase_enca">
-            <h1>Bienvenido a GeoFault</h1>
-            <h2>...Buenas publicaciones</h2>
-        </section>
-        <div class="ola_img_enca" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" 
-            preserveAspectRatio="none" style="height: 100%; width: 100%;">
-            <path d="M0.00,49.99 C160.46,143.58 349.21,-49.99 500.00,49.99 L500.00,150.00 L0.00,150.00 Z" 
-            style="stroke: none; fill: rgb(255, 255, 255);"></path></svg></div>
+        </div>
     </header>
+    <main class="encab-public">
+        <div class="encab-img-public">
+            <h1>COMPARTE / INVESTIGACIÓN</h1>
+        </div>
+    </main>
     <main>
         <section class="contenedor arriba">
             <form action="enviar_investigacion.php" method="post">
